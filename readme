@@ -1,0 +1,95 @@
+# 🚗 Desafio 01 - Inteligência Competitiva Automotiva (Ford)
+
+Aplicação mobile corporativa desenvolvida em **React Native**, **Expo** e **TypeScript** para consulta, comparação de especificações técnicas de veículos e análise competitiva, com foco na validação da **Ford Ranger Raptor**.
+
+---
+
+## 📱 Funcionalidades do Aplicativo
+- **🔐 Autenticação**: Tela de login corporativo simulado.
+- **🏠 Início (Ford Connect)**: Dashboard de telemetria (estilo FordPass), conectividade SYNC® 4 e seletor dos modos de terreno G.O.A.T.
+- **🔍 Comparador**: Formulário de inteligência competitiva com busca por Marca, Modelo, Versão e Atributos dinâmicos (com tratamento de *"Não disponível"* para atributos ausentes).
+- **🚘 Catálogo**: Exibição da frota cadastrada com fotos em alta resolução e especificações.
+- **📊 Análise**: Indicadores de performance e posicionamento de mercado frente aos concorrentes (Toyota Hilux GR-Sport, Chevrolet S10 Z71).
+- **🛠️ Suporte**: Central de assistência 24h Ford e manuais de serviço.
+
+---
+
+## 🚀 Como Executar o Projeto Localmente
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone <LINK_DO_SEU_REPOSITORIO_GITHUB>
+   cd ford-competitiva
+Instalar todas as dependências:
+
+Bash
+npm install
+Iniciar o servidor do Expo:
+
+Bash
+npx expo start
+Testar a aplicação:
+
+Na Web (Navegador): Pressiona a tecla w no terminal.
+
+No Telemóvel: Abre a app Expo Go (Android/iOS) e faz o scan do QR Code gerado no terminal.
+
+## 📦 Ficheiro APK (Android)
+
+O executável `.apk` do aplicativo foi gerado na nuvem do Expo (EAS Build) com a versão final do projeto (5 abas, Login e Suporte).
+
+👉 **[Acessar página de download do APK no Expo Dev](https://expo.dev/accounts/superadordeuses/projects/ford-competitiva/builds/2e9a0edd-f21a-43fd-9719-13b511d65c1c)**
+
+👥 Guia para Colegas de Equipa (Como Contribuir / Modificar)
+Caso queiras adicionar novos veículos, alterar estilos ou criar novas telas:
+
+1. Adicionar ou alterar veículos no banco de dados
+Abre o ficheiro src/data/mockData.ts.
+
+Adiciona um novo objeto à lista vehiclesDatabase seguindo o tipo Vehicle:
+
+TypeScript
+{
+  id: 'novo-carro',
+  brand: 'Marca',
+  model: 'Modelo',
+  version: 'Versao',
+  category: 'Categoria',
+  priceEstimate: 'R$ 000.000',
+  imageUrl: '[https://link-da-imagem.jpg](https://link-da-imagem.jpg)',
+  specs: {
+    motor: '2.0 Turbo',
+    potencia: '200 cv',
+    // adiciona aqui os atributos em minúsculas
+  }
+}
+2. Estrutura de Pastas do Projeto
+src/
+├── data/       # Banco mockado (mockData.ts)
+├── screens/    # Telas (HomeScreen, CompareScreen, CatalogScreen, AnalyticsScreen, SupportScreen, LoginScreen)
+├── types/      # Tipagens TypeScript (vehicle.ts)
+📦 Download do APK (Android)
+O ficheiro .apk pronto para instalação em dispositivos Android foi gerado via Expo EAS e pode ser descarregado diretamente pelo link oficial do build:
+Download do APK no Expo EAS[cite: 12]
+
+
+Guarda o ficheiro com **`Ctrl + S`**.
+
+---
+
+### 2. Enviar as Alterações para o GitHub
+
+Abre o terminal do teu VS Code e executa os seguintes comandos para subir todo o código atualizado:
+
+1. **Adicionar os ficheiros alterados:**
+   ```bash
+   git add .
+Criar o commit do projeto completo:
+
+Bash
+git commit -m "feat: app completo com 5 abas, login, suporte e guia de contribuição"
+Subir para o repositório remoto:
+
+Bash
+git push origin main
+(Se a tua branch principal se chamar master, usa git push origin master).
