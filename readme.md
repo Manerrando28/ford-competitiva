@@ -19,6 +19,15 @@ O aplicativo tem como objetivo centralizar informações de veículos, permitind
 
 # 📱 Sobre o Projeto
 
+<p align="center">
+  <img
+    width="302"
+    height="655"
+    alt="qemu-system-x86_64_YfsYasaKKT"
+    src="https://github.com/user-attachments/assets/071ef7f3-adbc-4c1d-85b9-220396b84fed"
+  />
+</p>
+
 O **Ford Connect+** é uma aplicação mobile voltada à inteligência competitiva automotiva.
 
 A solução permite consultar veículos cadastrados, visualizar suas especificações técnicas, realizar comparações entre modelos e analisar o posicionamento de um veículo em relação aos seus concorrentes.
