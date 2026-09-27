@@ -1,6 +1,10 @@
+export type SpecificationStatus = 'encontrado' | 'nao_disponivel';
+
 export interface SpecificationItem {
   attribute: string;
   value: string | null;
+  status: SpecificationStatus;
+  source: string;
 }
 
 export interface Vehicle {
@@ -12,6 +16,13 @@ export interface Vehicle {
   priceEstimate?: string;
   category: string;
   specs: Record<string, string>;
+  goatModes?: string[];
+  telemetry?: {
+    fuelLevel: string;
+    range: string;
+    tirePressure: string;
+    oilLife: string;
+  };
 }
 
 export interface SearchResult {
@@ -20,4 +31,7 @@ export interface SearchResult {
   version: string;
   specifications: SpecificationItem[];
   vehicle?: Vehicle;
+  foundCount: number;
+  unavailableCount: number;
+  source: string;
 }
