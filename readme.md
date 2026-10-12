@@ -1,4 +1,4 @@
-# 🚗 Desafio 01 — Inteligência Competitiva Automotiva | Ford
+# 🚗 Ford Athena - Mobile APP
 
 Aplicação mobile corporativa desenvolvida para o **Desafio 01 de Inteligência Competitiva Automotiva da Ford**, utilizando **React Native, Expo e TypeScript**.
 
